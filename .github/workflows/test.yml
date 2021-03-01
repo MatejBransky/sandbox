@@ -29,7 +29,7 @@ jobs:
         run: yarn install
         
       - name: Check conventional commits
-        run: echo "check conventional commits - WIP"
+        run: yarn run commitlint --verbose --from HEAD~${{ github.event.pull_request.commits }} --to HEAD
       
       - name: Check formatting
         run: yarn format
