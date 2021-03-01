@@ -14,10 +14,10 @@
 		"test": "lerna run test"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "11.0.0",
-		"@commitlint/config-conventional": "^12.0.1",
-		"husky": "^4.3.8",
-		"lerna": "^3.22.1"
+		"@commitlint/cli": "12.0.1",
+		"@commitlint/config-conventional": "12.0.1",
+		"husky": "4.3.8",
+		"lerna": "3.22.1"
 	},
 	"husky": {
 		"hooks": {
