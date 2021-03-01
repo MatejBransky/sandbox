@@ -33,7 +33,7 @@ jobs:
         run: yarn run commitlint --verbose --from HEAD~${{ github.event.pull_request.commits }} --to HEAD
       
       - name: Check formatting
-        run: yarn format
+        run: yarn check:format
         
       - name: Lint
         run: yarn lint

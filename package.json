@@ -8,7 +8,8 @@
 		"apps/*"
 	],
 	"scripts": {
-		"format": "lerna run format",
+		"check:format": "lerna run format",
+		"format": "lerna run format -- --write",
 		"lint": "lerna run lint",
 		"types": "lerna run types",
 		"test": "lerna run test"
