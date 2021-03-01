@@ -7,7 +7,8 @@
     "serve": "vite preview",
     "format": "prettier --check .",
     "lint": "eslint .",
-    "types": "tsc --noEmit"
+    "types": "tsc --noEmit",
+    "precommit": "yarn format && yarn lint && yarn types"
   },
   "dependencies": {
     "react": "^17.0.0",
