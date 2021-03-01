@@ -10,7 +10,8 @@
 	"scripts": {
 		"format": "lerna run format",
 		"lint": "lerna run lint",
-		"types": "lerna run types"
+		"types": "lerna run types",
+		"test": "lerna run test"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "11.0.0",
