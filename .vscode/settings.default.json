@@ -1,0 +1,17 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.detectIndentation": true,
+	"editor.tabSize": 2,
+	"eslint.alwaysShowStatus": true,
+	"files.eol": "\n",
+	"prettier.useTabs": true,
+	"conventionalCommits.scopes": [],
+	"editor.insertSpaces": false,
+	"[json]": {
+		"editor.insertSpaces": true
+	},
+	"[md]": {
+		"editor.insertSpaces": true
+	},
+	"typescript.tsdk": "node_modules\\typescript\\lib"
+}
