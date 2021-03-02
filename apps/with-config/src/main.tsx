@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { App } from './App';
+import { initConfig } from './config';
 
 async function main() {
   try {
@@ -7,11 +9,13 @@ async function main() {
      * Simulates environment variables
      * which are accessible within the runtime
      */
-    let env = await fetch('/env.json')
+    const env = await fetch('/env.json')
       .then((response) => response.json())
       .catch(() => {
         throw new Error('The required file "/env.json" is missing.');
       });
+
+    const config = initConfig(env);
 
     ReactDOM.render(
       <React.StrictMode>
@@ -19,6 +23,8 @@ async function main() {
         <pre>
           <code>{JSON.stringify(env, null, '  ')}</code>
         </pre>
+
+        <App config={config} />
       </React.StrictMode>,
       document.getElementById('root')
     );
