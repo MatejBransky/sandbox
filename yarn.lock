@@ -1334,9 +1334,9 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@testing-library/cypress@^7.0.4":
+"@testing-library/cypress@7.0.4":
   version "7.0.4"
-  resolved "https://registry.npmjs.org/@testing-library/cypress/-/cypress-7.0.4.tgz#38a55880712f222ddb9671bc899fe80f8c41bfc0"
+  resolved "https://registry.yarnpkg.com/@testing-library/cypress/-/cypress-7.0.4.tgz#38a55880712f222ddb9671bc899fe80f8c41bfc0"
   integrity sha512-5I1amLVB2ExIRWuHlvG35dVFVC2KiNBZ0U1ASJUJZASFPQ0BhqJG4s0B8B8wNAE7TrR8KWlrzcNutkgxXL6VOg==
   dependencies:
     "@babel/runtime" "^7.12.5"
@@ -2403,9 +2403,9 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-cypress@^6.6.0:
+cypress@6.6.0:
   version "6.6.0"
-  resolved "https://registry.npmjs.org/cypress/-/cypress-6.6.0.tgz#659c64cdb06e51b6be18fdac39d8f192deb54fa0"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-6.6.0.tgz#659c64cdb06e51b6be18fdac39d8f192deb54fa0"
   integrity sha512-+Xx3Zn653LJHUsCb9h1Keql2jlazbr1ROmbY6DFJMmXKLgXP4ez9cE403W93JNGRbZK0Tng3R/oP8mvd9XAPVg==
   dependencies:
     "@cypress/listr-verbose-renderer" "^0.4.1"
