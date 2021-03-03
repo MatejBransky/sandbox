@@ -1,19 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
-import { initConfig } from './config';
+import { getEnvVariables } from './config/env';
+import { initConfig } from './config/config';
 
 async function main() {
   try {
-    /**
-     * Simulates environment variables
-     * which are accessible within the runtime
-     */
-    const env = await fetch('/env.json')
-      .then((response) => response.json())
-      .catch(() => {
-        throw new Error('The required file "/env.json" is missing.');
-      });
+    const env = await getEnvVariables();
 
     const config = initConfig(env);
 

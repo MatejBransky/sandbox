@@ -1,5 +1,5 @@
 import React from 'react';
-import { Config } from './config';
+import { Config } from './config/config';
 
 export const App: React.FC<AppProps> = (props) => {
   return (
