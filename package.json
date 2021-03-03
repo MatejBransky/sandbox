@@ -1,34 +1,34 @@
 {
-	"private": true,
-	"name": "sandbox",
-	"license": "MIT",
-	"workspaces": [
-		"templates/*",
-		"libs/*",
-		"apps/*"
-	],
-	"scripts": {
-		"check:format": "lerna run format",
-		"format": "lerna run format -- --write",
-		"lint": "lerna run lint",
-		"types": "lerna run types",
-		"test": "lerna run test"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "12.0.1",
-		"@commitlint/config-conventional": "12.0.1",
-		"husky": "4.3.8",
-		"lerna": "4.0.0"
-	},
-	"husky": {
-		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD --exclude-dependents"
-		}
-	},
-	"commitlint": {
-		"extends": [
-			"@commitlint/config-conventional"
-		]
-	}
+  "private": true,
+  "name": "sandbox",
+  "license": "MIT",
+  "workspaces": [
+    "templates/*",
+    "libs/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "check:format": "lerna run format",
+    "format": "lerna run format -- --write",
+    "lint": "lerna run lint",
+    "types": "lerna run types",
+    "test:unit": "lerna run test:unit"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "12.0.1",
+    "@commitlint/config-conventional": "12.0.1",
+    "husky": "4.3.8",
+    "lerna": "4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD --exclude-dependents"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
 }

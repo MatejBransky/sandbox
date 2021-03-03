@@ -16,8 +16,11 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v2
+        env:
+          CYPRESS_baseUrl: http://localhost:5000
         with:
           install-command: yarn --frozen-lockfile --silent
-          project: ./templates/vite-react-ts-app
+          working-directory: templates/vite-react-ts-app
           build: yarn build
-          start: yarn dev
+          start: yarn serve
+          wait-on: "http://localhost:5000"
