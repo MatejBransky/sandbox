@@ -13,7 +13,7 @@ export const App = () => {
     return <div>Error</div>;
   }
 
-  if (status === 'pending') {
+  if (!data) {
     return <div>Loading...</div>;
   }
 
