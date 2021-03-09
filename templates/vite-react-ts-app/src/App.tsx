@@ -1,16 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Counter } from './Counter';
+import { useRequest } from './useRequest';
 
 export const App = () => {
-  const [count, setCount] = useState(0);
+  const { status, data } = useRequest(
+    'https://jsonplaceholder.typicode.com/posts/1'
+  );
+
+  console.log('post', data);
+
+  if (status === 'error') {
+    return <div>Error</div>;
+  }
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <p>Hello Vite + React!</p>
         <p>
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+          <Counter />
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
