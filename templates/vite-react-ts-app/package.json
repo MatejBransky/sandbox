@@ -9,7 +9,7 @@
     "format": "prettier --check .",
     "lint": "eslint .",
     "types": "tsc --noEmit",
-    "test:unit": "jest",
+    "test": "jest",
     "test:cypress": "cypress open",
     "precommit": "yarn format && yarn lint && yarn types"
   },

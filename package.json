@@ -12,7 +12,7 @@
     "format": "lerna run format -- --write",
     "lint": "lerna run lint",
     "types": "lerna run types",
-    "test:unit": "lerna run test:unit"
+    "test": "lerna run test"
   },
   "devDependencies": {
     "@commitlint/cli": "12.0.1",
