@@ -40,4 +40,4 @@ jobs:
         run: yarn types
 
       - name: Run unit tests
-        run: yarn test:unit
+        run: yarn test
