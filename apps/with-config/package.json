@@ -24,7 +24,7 @@
     "cypress": "7.0.1",
     "eslint": "7.23.0",
     "prettier": "2.2.1",
-    "typescript": "4.2.4",
+    "typescript": "4.9.5",
     "vite": "2.2.1"
   },
   "prettier": "@matejbransky/prettier-config",
